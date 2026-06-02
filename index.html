@@ -1,0 +1,1252 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dra. Jayne Costa | Odontologia e HarmonizaÃ§Ã£o Orofacial</title>
+  <meta name="description" content="Dra. Jayne Costa â€” especialista em odontologia estÃ©tica e harmonizaÃ§Ã£o orofacial. Implantes, facetas, lentes de contato dental e muito mais." />
+  <link rel="icon" type="image/png" href="assets/img/favicon%20dra.png" />
+  <link rel="shortcut icon" type="image/png" href="assets/img/favicon%20dra.png" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <!-- AOS Animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    /* â”€â”€â”€ RESET & BASE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; overflow-x: hidden; }
+    body { font-family: 'Inter', sans-serif; color: #1a1a2e; background: #fff; overflow-x: hidden; }
+
+    /* â”€â”€â”€ CSS VARIABLES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    :root {
+      --navy:       #12082a;
+      --blue:       #4a2880;
+      --sky:        #8a60c0;
+      --gold:       #c9a84c;
+      --gold-light: #e8c96c;
+      --light:      #f3eeff;
+      --gray:       #f0ebfa;
+      --white:      #ffffff;
+      --text:       #12082a;
+      --muted:      #7a6a90;
+      --radius: 16px;
+      --shadow: 0 8px 40px rgba(18,8,42,.10);
+      --shadow-lg: 0 20px 60px rgba(18,8,42,.18);
+      --transition: .4s cubic-bezier(.4,0,.2,1);
+    }
+
+    /* â”€â”€â”€ TYPOGRAPHY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .font-serif { font-family: 'Playfair Display', serif; }
+    h1,h2,h3,h4 { font-family: 'Playfair Display', serif; line-height: 1.2; }
+
+    /* â”€â”€â”€ UTILITIES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    .section-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: linear-gradient(135deg,rgba(201,168,76,.15),rgba(201,168,76,.05));
+      border: 1px solid rgba(201,168,76,.3);
+      color: var(--gold); font-size: .75rem; font-weight: 600;
+      letter-spacing: .1em; text-transform: uppercase;
+      padding: 6px 16px; border-radius: 100px;
+    }
+    .section-title { font-size: clamp(2rem,4vw,3rem); color: var(--navy); margin: 12px 0; }
+    .section-sub { color: var(--muted); font-size: 1.05rem; line-height: 1.7; max-width: 600px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 14px 32px; border-radius: 100px; font-weight: 600;
+      font-size: .95rem; text-decoration: none; cursor: pointer;
+      border: none; transition: var(--transition); letter-spacing: .02em;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg,var(--gold),var(--gold-light));
+      color: var(--navy); box-shadow: 0 4px 24px rgba(201,168,76,.35);
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(201,168,76,.5); }
+    .btn-outline {
+      background: transparent; color: var(--white);
+      border: 2px solid rgba(255,255,255,.5);
+    }
+    .btn-outline:hover { background: rgba(255,255,255,.1); border-color: var(--white); }
+    .btn-navy {
+      background: linear-gradient(135deg,var(--navy),var(--blue)); color: var(--white);
+      box-shadow: 0 4px 24px rgba(18,8,42,.3);
+    }
+    .btn-navy:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(74,40,128,.45); }
+    .glass {
+      background: rgba(255,255,255,.08);
+      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,.15);
+    }
+
+    /* â”€â”€â”€ LOADING SCREEN â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    #loader {
+      position: fixed; inset: 0; z-index: 9999;
+      background: #12082a;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      transition: opacity .6s ease, visibility .6s ease;
+    }
+    #loader.hidden { opacity: 0; visibility: hidden; }
+    .loader-logo { font-family:'Playfair Display',serif; color:#fff; font-size:2rem; font-weight:700; margin-bottom:32px; }
+    .loader-logo span { color: var(--gold); }
+    .loader-bar { width: 200px; height: 2px; background: rgba(255,255,255,.1); border-radius:2px; overflow:hidden; }
+    .loader-fill { height:100%; background:linear-gradient(90deg,var(--gold),var(--gold-light)); animation:load 1.4s ease forwards; }
+    @keyframes load { from{width:0} to{width:100%} }
+
+    /* â”€â”€â”€ HEADER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    #header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      padding: 24px 0;
+      transition: var(--transition);
+    }
+    #header.scrolled {
+      background: rgba(18,8,42,.97);
+      backdrop-filter: blur(20px);
+      padding: 14px 0;
+      box-shadow: 0 4px 30px rgba(0,0,0,.2);
+    }
+    .header-inner { display:flex; align-items:center; justify-content:space-between; gap:24px; }
+    .logo { display:flex; align-items:center; gap:12px; text-decoration:none; }
+    .logo-icon {
+      width:38px; height:38px; border-radius:10px;
+      background:rgba(138,96,192,.25);
+      border:1px solid rgba(138,96,192,.4);
+      display:flex; align-items:center; justify-content:center;
+      font-size:1rem; color:var(--sky); flex-shrink:0;
+    }
+    .logo-text { font-family:'Playfair Display',serif; color:#fff; font-size:1.1rem; font-weight:700; line-height:1.2; }
+    .logo-text span { color:var(--gold); }
+    .logo-text small { display:block; font-family:'Inter',sans-serif; font-size:.62rem; font-weight:400; color:rgba(255,255,255,.5); letter-spacing:.1em; text-transform:uppercase; margin-top:2px; }
+    nav { display:flex; align-items:center; gap:8px; }
+    nav a {
+      color:rgba(255,255,255,.75); text-decoration:none;
+      font-size:.9rem; font-weight:500; padding:8px 14px;
+      border-radius:8px; transition:var(--transition);
+    }
+    nav a:hover { color:#fff; background:rgba(255,255,255,.08); }
+    .header-cta { display:flex; align-items:center; gap:12px; }
+    .hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; padding:8px; }
+    .hamburger span { display:block; width:24px; height:2px; background:#fff; border-radius:2px; transition:var(--transition); }
+    .mobile-menu {
+      display:none; position:fixed; inset:0; z-index:999;
+      background:#12082a; flex-direction:column;
+      align-items:center; justify-content:center; gap:24px;
+    }
+    .mobile-menu.open { display:flex; }
+    .mobile-menu a { color:#fff; font-size:1.5rem; font-family:'Playfair Display',serif; text-decoration:none; }
+    .mobile-menu .btn { font-size:1rem; }
+
+    /* â”€â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    #hero { height:100vh; min-height:640px; position:relative; }
+    .hero-swiper { width:100%; height:100%; }
+    .hero-slide {
+      position:relative; width:100%; height:100%;
+      display:flex; align-items:center; justify-content:center;
+    }
+    .hero-bg {
+      position:absolute; inset:0;
+      background-size:cover; background-position:center;
+      transform:scale(1.05);
+      transition:transform 8s ease;
+    }
+    .swiper-slide-active .hero-bg { transform:scale(1); }
+    .hero-overlay {
+      position:absolute; inset:0;
+      background:linear-gradient(135deg,rgba(18,8,42,.88) 0%,rgba(74,40,128,.55) 100%);
+    }
+    .hero-content {
+      position:relative; z-index:2; text-align:center;
+      max-width:800px; padding:0 24px;
+    }
+    .hero-badge {
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(201,168,76,.15); border:1px solid rgba(201,168,76,.4);
+      color:var(--gold); font-size:.78rem; font-weight:600;
+      letter-spacing:.12em; text-transform:uppercase;
+      padding:8px 20px; border-radius:100px; margin-bottom:24px;
+    }
+    .hero-title {
+      font-size:clamp(2.4rem,6vw,4.5rem); color:#fff;
+      line-height:1.1; margin-bottom:20px;
+    }
+    .hero-title em { color:var(--gold); font-style:normal; }
+    .hero-sub {
+      font-size:clamp(1rem,2vw,1.2rem); color:rgba(255,255,255,.8);
+      line-height:1.7; margin-bottom:40px;
+    }
+    .hero-actions { display:flex; align-items:center; justify-content:center; gap:16px; flex-wrap:wrap; }
+    .hero-stats {
+      position:absolute; bottom:60px; left:50%; transform:translateX(-50%);
+      display:flex; gap:24px; z-index:2;
+    }
+    .hero-stat {
+      text-align:center; color:#fff;
+      padding:16px 28px; border-radius:16px;
+    }
+    .hero-stat strong { display:block; font-size:1.8rem; font-weight:700; color:var(--gold); }
+    .hero-stat span { font-size:.8rem; color:rgba(255,255,255,.7); }
+
+    /* Swiper navigation */
+    .hero-prev, .hero-next {
+      position:absolute; top:50%; z-index:10; transform:translateY(-50%);
+      width:52px; height:52px; border-radius:50%; cursor:pointer;
+      display:flex; align-items:center; justify-content:center;
+      background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.2);
+      color:#fff; font-size:1rem; transition:var(--transition);
+      backdrop-filter:blur(10px);
+    }
+    .hero-prev { left:32px; } .hero-next { right:32px; }
+    .hero-prev:hover, .hero-next:hover { background:rgba(201,168,76,.3); border-color:var(--gold); }
+    .hero-pagination { position:absolute; bottom:28px !important; }
+    .hero-pagination .swiper-pagination-bullet {
+      width:8px; height:8px; background:rgba(255,255,255,.4);
+      border-radius:4px; transition:var(--transition); opacity:1;
+    }
+    .hero-pagination .swiper-pagination-bullet-active {
+      width:28px; background:var(--gold);
+    }
+
+    /* â”€â”€â”€ SCROLL DOWN â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .scroll-down {
+      position:absolute; bottom:100px; left:50%; transform:translateX(-50%);
+      z-index:10; color:rgba(255,255,255,.6); font-size:.75rem;
+      letter-spacing:.1em; text-transform:uppercase;
+      display:flex; flex-direction:column; align-items:center; gap:8px;
+      animation:bounce 2s infinite;
+    }
+    .scroll-down i { font-size:1rem; }
+    @keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(8px)} }
+
+    /* â”€â”€â”€ ABOUT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    #sobre { padding:120px 0; background:#fff; }
+    .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; }
+    .about-img-wrap { position:relative; }
+    .about-img {
+      width:100%; aspect-ratio:4/5; border-radius:24px;
+      object-fit:cover; object-position:top center; display:block;
+    }
+    .about-img-deco {
+      position:absolute; bottom:-24px; right:-24px;
+      width:180px; height:180px; border-radius:20px;
+      background:linear-gradient(135deg,var(--gold),var(--gold-light));
+      display:flex; flex-direction:column; align-items:center; justify-content:center;
+      box-shadow:var(--shadow-lg);
+    }
+    .about-img-deco strong { font-size:2.5rem; font-weight:800; color:var(--navy); }
+    .about-img-deco span { font-size:.8rem; color:var(--navy); font-weight:600; text-align:center; line-height:1.3; }
+    .about-badge-float {
+      position:absolute; top:24px; left:-24px;
+      padding:16px 20px; border-radius:16px;
+      background:#fff; box-shadow:var(--shadow);
+      display:flex; align-items:center; gap:12px;
+    }
+    .about-badge-float .icon { width:40px; height:40px; border-radius:10px; background:var(--light); display:flex; align-items:center; justify-content:center; color:var(--sky); }
+    .about-badge-float strong { display:block; font-size:.95rem; color:var(--navy); }
+    .about-badge-float span { font-size:.8rem; color:var(--muted); }
+    .about-content { display:flex; flex-direction:column; gap:32px; }
+    .stats-row { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .stat-card {
+      background:var(--gray); border-radius:16px; padding:24px;
+      text-align:center; transition:var(--transition);
+    }
+    .stat-card:hover { background:var(--navy); }
+    .stat-card:hover .stat-num { color:#fff; }
+    .stat-card:hover .stat-label { color:rgba(255,255,255,.6); }
+    .stat-num { font-size:2rem; font-weight:800; color:var(--navy); font-family:'Playfair Display',serif; }
+    .stat-num span { color:var(--gold); }
+    .stat-label { font-size:.82rem; color:var(--muted); margin-top:4px; }
+    .diff-cards { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .diff-card {
+      display:flex; align-items:flex-start; gap:12px;
+      padding:16px; border-radius:14px; background:var(--gray);
+      transition:var(--transition);
+    }
+    .diff-card:hover { background:var(--light); }
+    .diff-card .icon { width:36px; height:36px; min-width:36px; border-radius:10px; background:var(--navy); display:flex; align-items:center; justify-content:center; color:var(--gold); font-size:.85rem; }
+    .diff-card strong { display:block; font-size:.9rem; color:var(--navy); font-weight:600; }
+    .diff-card span { font-size:.8rem; color:var(--muted); line-height:1.4; }
+
+    /* â”€â”€â”€ SERVICES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    #servicos { padding:120px 0; background:var(--gray); }
+    .section-header { text-align:center; margin-bottom:64px; }
+    .services-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; }
+    .service-card {
+      background:#fff; border-radius:20px; overflow:hidden;
+      transition:var(--transition); cursor:pointer;
+      border:1px solid rgba(0,0,0,.05); position:relative;
+      display:flex; flex-direction:column;
+    }
+    .service-card:hover { transform:translateY(-8px); box-shadow:var(--shadow-lg); }
+    .s-img { position:relative; width:100%; aspect-ratio:4/3; overflow:hidden; flex-shrink:0; }
+    .s-img img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .6s ease; }
+    .service-card:hover .s-img img { transform:scale(1.08); }
+    .s-img-overlay { display:none; }
+    .s-body { padding:20px 20px 24px; display:flex; flex-direction:column; flex:1; }
+    .s-title { font-size:1rem; font-weight:700; color:var(--navy); margin-bottom:8px; }
+    .s-desc { font-size:.83rem; color:var(--muted); line-height:1.6; margin-bottom:16px; flex:1; }
+    .s-btn { font-size:.83rem; font-weight:600; color:var(--sky); display:flex; align-items:center; gap:6px; transition:var(--transition); text-decoration:none; }
+    .s-btn:hover, .service-card:hover .s-btn { color:var(--gold); gap:10px; }
+
+    /* â”€â”€â”€ RESULTS (BEFORE/AFTER) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    #resultados { padding:120px 0; background:#fff; }
+    .ba-grid { display:grid; grid-template-columns:1fr 1.3fr 1fr; gap:28px; align-items:center; }
+    .ba-card-destaque { box-shadow:0 16px 56px rgba(15,32,53,.18) !important; }
+    .ba-card-destaque .ba-compare { aspect-ratio:3/4.2; }
+    .ba-card-destaque .ba-info { padding:20px 24px 24px; }
+    .ba-card-destaque .ba-info strong { font-size:1.05rem; }
+    .ba-tip {
+      display:flex; align-items:center; justify-content:center; gap:8px;
+      color:var(--muted); font-size:.78rem; margin-top:20px;
+      animation:pulse-tip 2s infinite;
+    }
+    @keyframes pulse-tip { 0%,100%{opacity:.6} 50%{opacity:1} }
+    .ba-card { border-radius:20px; overflow:hidden; box-shadow:var(--shadow); transition:var(--transition); }
+    .ba-card:hover { transform:translateY(-6px); box-shadow:var(--shadow-lg); }
+    .ba-compare { position:relative; aspect-ratio:3/4; overflow:hidden; cursor:col-resize; user-select:none; }
+    .ba-before, .ba-after {
+      position:absolute; inset:0;
+      background-size:cover; background-position:center top;
+      overflow:hidden;
+    }
+    .ba-after { clip-path:inset(0 50% 0 0); transition:.05s; }
+    .ba-before img, .ba-after img {
+      width:100%; height:100%;
+      object-fit:cover; object-position:center top;
+      display:block; pointer-events:none;
+    }
+    .ba-before img { filter: none; }
+    .ba-divider {
+      position:absolute; top:0; bottom:0; left:50%;
+      width:2px; background:var(--gold); z-index:10;
+      transform:translateX(-50%);
+    }
+    .ba-handle {
+      position:absolute; top:50%; left:50%;
+      transform:translate(-50%,-50%);
+      width:40px; height:40px; border-radius:50%;
+      background:var(--gold); display:flex; align-items:center; justify-content:center;
+      color:var(--navy); font-size:1rem; z-index:11;
+      box-shadow:0 4px 16px rgba(201,168,76,.5);
+    }
+    .ba-labels { display:flex; justify-content:space-between; padding:12px 16px 0; }
+    .ba-label { font-size:.72rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
+    .ba-info { padding:16px 20px 20px; background:#fff; }
+    .ba-info strong { display:block; font-size:.95rem; color:var(--navy); font-weight:700; }
+    .ba-info span { font-size:.82rem; color:var(--muted); }
+
+    /* â”€â”€â”€ TESTIMONIALS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    #depoimentos { padding:120px 0; background:var(--navy); overflow:hidden; }
+    #depoimentos .section-title { color:#fff; }
+    .test-swiper { padding:24px 8px 48px !important; }
+    .test-card {
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.1);
+      border-radius:20px; padding:36px 32px;
+      backdrop-filter:blur(10px);
+      transition:var(--transition);
+    }
+    .test-card:hover { background:rgba(255,255,255,.1); border-color:rgba(201,168,76,.3); }
+    .test-stars { color:var(--gold); font-size:.9rem; margin-bottom:20px; }
+    .test-quote { font-size:1rem; color:rgba(255,255,255,.85); line-height:1.7; margin-bottom:28px; font-style:italic; }
+    .test-author { display:flex; align-items:center; gap:14px; }
+    .test-avatar {
+      width:48px; height:48px; border-radius:50%;
+      object-fit:cover; border:2px solid rgba(201,168,76,.4);
+    }
+    .test-name { font-weight:700; color:#fff; font-size:.95rem; }
+    .test-role { font-size:.8rem; color:rgba(255,255,255,.5); }
+    .test-pagination { text-align:center; }
+    .test-pagination .swiper-pagination-bullet { background:rgba(255,255,255,.3); opacity:1; }
+    .test-pagination .swiper-pagination-bullet-active { background:var(--gold); }
+
+    /* â”€â”€â”€ DIFFERENTIALS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    #diferenciais { padding:120px 0; background:linear-gradient(135deg,var(--light) 0%,#fff 100%); }
+    .diffs-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:32px; }
+    .diff-big-card {
+      background:#fff; border-radius:24px; padding:40px 32px;
+      box-shadow:var(--shadow); transition:var(--transition);
+      border:1px solid rgba(0,0,0,.04);
+      display:flex; flex-direction:column; align-items:flex-start; gap:16px;
+    }
+    .diff-big-card:hover { transform:translateY(-8px); box-shadow:var(--shadow-lg); border-color:rgba(201,168,76,.2); }
+    .diff-big-icon {
+      width:64px; height:64px; border-radius:18px;
+      background:linear-gradient(135deg,var(--navy),var(--blue));
+      display:flex; align-items:center; justify-content:center;
+      color:var(--gold); font-size:1.5rem;
+    }
+    .diff-big-card h3 { font-size:1.15rem; color:var(--navy); font-weight:700; }
+    .diff-big-card p { font-size:.9rem; color:var(--muted); line-height:1.7; }
+
+    /* â”€â”€â”€ CTA SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .cta-actions { display:flex; justify-content:center; gap:16px; flex-wrap:wrap; }
+    .btn-whatsapp {
+      background:linear-gradient(135deg,#25d366,#1ebe5d);
+      color:#fff; box-shadow:0 8px 32px rgba(37,211,102,.35);
+    }
+    .btn-whatsapp:hover { transform:translateY(-2px); box-shadow:0 12px 40px rgba(37,211,102,.5); }
+
+    /* â”€â”€â”€ CONTACT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    #contato { padding:120px 0; background:linear-gradient(180deg, #ede5f8 0%, #f5f0fc 100%); }
+    .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; }
+    .contact-info { display:flex; flex-direction:column; gap:32px; }
+    .contact-item { display:flex; align-items:flex-start; gap:16px; }
+    .contact-item .icon {
+      width:48px; height:48px; min-width:48px; border-radius:14px;
+      background:var(--navy); display:flex; align-items:center; justify-content:center;
+      color:var(--gold); font-size:1rem;
+    }
+    .contact-item strong { display:block; color:var(--navy); font-weight:700; margin-bottom:4px; }
+    .contact-item span { color:var(--muted); font-size:.9rem; line-height:1.5; }
+    .contact-map {
+      width:100%; height:200px; border-radius:16px; overflow:hidden;
+      background:var(--gray); margin-top:8px;
+      display:flex; align-items:center; justify-content:center;
+      color:var(--muted); font-size:.9rem;
+    }
+    .contact-form { display:flex; flex-direction:column; gap:16px; }
+    .form-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    .form-group { display:flex; flex-direction:column; gap:6px; }
+    .form-group label { font-size:.85rem; font-weight:600; color:var(--navy); }
+    .form-group input, .form-group select, .form-group textarea {
+      padding:14px 18px; border-radius:12px;
+      border:1.5px solid #e2e8f0;
+      font-family:'Inter',sans-serif; font-size:.9rem;
+      color:var(--text); background:#fff;
+      transition:var(--transition); outline:none;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color:var(--sky); box-shadow:0 0 0 3px rgba(45,127,193,.1);
+    }
+    .form-group textarea { resize:vertical; min-height:120px; }
+    .form-group select { appearance:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 16px center; }
+    .form-success { display:none; text-align:center; padding:24px; border-radius:16px; background:var(--light); color:var(--navy); }
+    .form-success i { font-size:2.5rem; color:var(--sky); margin-bottom:12px; display:block; }
+
+    /* â”€â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    footer { background:var(--navy); padding:80px 0 40px; }
+    .footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1.5fr; gap:48px; margin-bottom:64px; }
+    .footer-brand p { font-size:.9rem; color:rgba(255,255,255,.55); line-height:1.7; margin-top:16px; max-width:280px; }
+    .socials { display:flex; gap:12px; margin-top:20px; }
+    .socials a {
+      width:38px; height:38px; border-radius:10px;
+      background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.1);
+      display:flex; align-items:center; justify-content:center;
+      color:rgba(255,255,255,.6); font-size:.9rem; transition:var(--transition);
+    }
+    .socials a:hover { background:var(--gold); color:var(--navy); border-color:var(--gold); }
+    .footer-col h4 { color:#fff; font-size:1rem; font-weight:700; margin-bottom:20px; }
+    .footer-col ul { list-style:none; display:flex; flex-direction:column; gap:12px; }
+    .footer-col ul li a { color:rgba(255,255,255,.55); text-decoration:none; font-size:.88rem; transition:var(--transition); }
+    .footer-col ul li a:hover { color:var(--gold); }
+    .footer-schedule { display:flex; flex-direction:column; gap:10px; }
+    .schedule-row { display:flex; justify-content:space-between; font-size:.85rem; }
+    .schedule-row .day { color:rgba(255,255,255,.55); }
+    .schedule-row .time { color:rgba(255,255,255,.85); font-weight:500; }
+    .footer-bottom {
+      border-top:1px solid rgba(255,255,255,.08);
+      padding-top:32px; display:flex; justify-content:space-between; align-items:center;
+      flex-wrap:wrap; gap:16px;
+    }
+    .footer-bottom p { color:rgba(255,255,255,.35); font-size:.82rem; }
+    .footer-bottom a { color:var(--gold); text-decoration:none; }
+
+    /* â”€â”€â”€ BACK TO TOP â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    #back-top {
+      position:fixed; bottom:32px; right:32px; z-index:500;
+      width:48px; height:48px; border-radius:50%;
+      background:linear-gradient(135deg,var(--gold),var(--gold-light));
+      display:flex; align-items:center; justify-content:center;
+      color:var(--navy); font-size:1rem; cursor:pointer;
+      box-shadow:0 8px 24px rgba(201,168,76,.4);
+      opacity:0; visibility:hidden; transition:var(--transition);
+    }
+    #back-top.visible { opacity:1; visibility:visible; }
+    #back-top:hover { transform:translateY(-4px); }
+
+    /* â”€â”€â”€ WHATSAPP FLOAT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    #wa-float {
+      position:fixed; bottom:32px; left:32px; z-index:500;
+      width:56px; height:56px; border-radius:50%;
+      background:linear-gradient(135deg,#25d366,#1ebe5d);
+      display:flex; align-items:center; justify-content:center;
+      color:#fff; font-size:1.5rem; cursor:pointer;
+      box-shadow:0 8px 24px rgba(37,211,102,.4);
+      transition:var(--transition); animation:pulse-wa 2.5s infinite;
+    }
+    @keyframes pulse-wa {
+      0%,100%{box-shadow:0 8px 24px rgba(37,211,102,.4)}
+      50%{box-shadow:0 8px 48px rgba(37,211,102,.6)}
+    }
+    #wa-float:hover { transform:scale(1.1); }
+
+    /* â”€â”€â”€ RESPONSIVE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    @media(max-width:1024px) {
+      .services-grid { grid-template-columns:repeat(2,1fr); }
+      .footer-grid { grid-template-columns:1fr 1fr; }
+      .diffs-grid { grid-template-columns:repeat(2,1fr); }
+    }
+    #header.hidden-nav {
+      transform: translateY(-100%);
+    }
+    @media(max-width:768px) {
+      nav, .hamburger { display:none; }
+      #header { padding: 14px 0; background: rgba(18,8,42,.97); }
+      .header-cta .btn { padding: 8px 16px; font-size: .8rem; }
+      .about-grid, .results-intro, .contact-grid { grid-template-columns:1fr; gap:48px; }
+      .about-img-wrap { max-width:480px; margin:0 auto; }
+      .about-img-deco { right:0; }
+      .about-badge-float { left:0; }
+      .services-grid { grid-template-columns:1fr; }
+      .diffs-grid { grid-template-columns:1fr; }
+      .ba-grid { grid-template-columns:1fr; max-width:380px; margin:0 auto; }
+      .footer-grid { grid-template-columns:1fr; }
+      .hero-stats { flex-direction:column; gap:12px; }
+      .form-row { grid-template-columns:1fr; }
+      .stats-row { grid-template-columns:1fr; }
+      .diff-cards { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-logo">Dra. <span>Jayne Costa</span></div>
+  <div style="color:rgba(255,255,255,.45);font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;margin-bottom:32px">Odontologia e HarmonizaÃ§Ã£o Orofacial</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#inicio" onclick="closeMobile()">InÃ­cio</a>
+  <a href="#sobre" onclick="closeMobile()">Sobre</a>
+  <a href="#servicos" onclick="closeMobile()">ServiÃ§os</a>
+  <a href="#resultados" onclick="closeMobile()">Resultados</a>
+  <a href="#contato" onclick="closeMobile()">Contato</a>
+  <a href="https://wa.me/5581999576412" class="btn btn-primary" style="margin-top:16px">
+    <i class="fab fa-whatsapp"></i> Agendar AvaliaÃ§Ã£o
+  </a>
+</div>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="#inicio" class="logo">
+        <div class="logo-icon"><i class="fas fa-tooth"></i></div>
+        <div class="logo-text">Dra. <span>Jayne</span></div>
+      </a>
+      <nav>
+        <a href="#inicio">InÃ­cio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">ServiÃ§os</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="header-cta">
+        <a href="https://wa.me/5581999576412" class="btn btn-primary" style="padding:10px 22px; font-size:.85rem;">
+          Agendar AvaliaÃ§Ã£o
+        </a>
+      </div>
+      <div class="hamburger" id="hamburger" onclick="toggleMobile()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="inicio">
+  <div id="hero">
+    <div class="swiper hero-swiper" id="heroSwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide hero-slide">
+          <div class="hero-bg" style="background-image:url('assets/img/slide carrosel 2.png');background-position:center center"></div>
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <div class="hero-badge"><i class="fas fa-star"></i> Tecnologia de Ponta</div>
+            <h1 class="hero-title">Implantes que<br><em>Transformam</em> Vidas</h1>
+            <p class="hero-sub">Recupere sua confianÃ§a com implantes dentÃ¡rios de Ãºltima geraÃ§Ã£o.<br>EstÃ©tica perfeita aliada Ã  funÃ§Ã£o e durabilidade.</p>
+            <div class="hero-actions">
+              <a href="#contato" class="btn btn-primary"><i class="fas fa-calendar-alt"></i> Agendar AvaliaÃ§Ã£o Gratuita</a>
+              <a href="#servicos" class="btn btn-outline"><i class="fas fa-play-circle"></i> ConheÃ§a os ServiÃ§os</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide hero-slide">
+          <div class="hero-bg" style="background-image:url('assets/img/slide carrosel 1.png');background-position:center top"></div>
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <div class="hero-badge"><i class="fas fa-gem"></i> EstÃ©tica Premium</div>
+            <h1 class="hero-title">Lentes de Contato<br><em>Dental</em></h1>
+            <p class="hero-sub">O sorriso mais natural e sofisticado possÃ­vel.<br>Resultado imediato com mÃ­nima intervenÃ§Ã£o.</p>
+            <div class="hero-actions">
+              <a href="#contato" class="btn btn-primary"><i class="fas fa-calendar-alt"></i> Agendar AvaliaÃ§Ã£o Gratuita</a>
+              <a href="#resultados" class="btn btn-outline"><i class="fas fa-images"></i> Ver Resultados</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide hero-slide">
+          <div class="hero-bg" style="background-image:url('assets/img/foto slide sorriso.png');background-position:center center"></div>
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <div class="hero-badge"><i class="fas fa-sparkles"></i> Clareamento AvanÃ§ado</div>
+            <h1 class="hero-title">Sorria com<br><em>ConfianÃ§a</em></h1>
+            <p class="hero-sub">Clareamento dental profissional atÃ© 8 tons mais claro.<br>Resultado imediato, seguro e duradouro.</p>
+            <div class="hero-actions">
+              <a href="#contato" class="btn btn-primary"><i class="fas fa-calendar-alt"></i> Agendar AvaliaÃ§Ã£o Gratuita</a>
+              <a href="#sobre" class="btn btn-outline"><i class="fas fa-info-circle"></i> Sobre a ClÃ­nica</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide hero-slide">
+          <div class="hero-bg" style="background-image:url('assets/img/alinhamento invisive.png');background-position:center center"></div>
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <div class="hero-badge"><i class="fas fa-award"></i> Ortodontia Moderna</div>
+            <h1 class="hero-title">Alinhamento<br><em>InvisÃ­vel</em></h1>
+            <p class="hero-sub">Dentes alinhados sem aparelho metÃ¡lico convencional.<br>DiscreÃ§Ã£o e conforto do inÃ­cio ao fim.</p>
+            <div class="hero-actions">
+              <a href="#contato" class="btn btn-primary"><i class="fas fa-calendar-alt"></i> Agendar AvaliaÃ§Ã£o Gratuita</a>
+              <a href="#servicos" class="btn btn-outline"><i class="fas fa-list"></i> Todos os ServiÃ§os</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Navigation -->
+      <div class="hero-prev"><i class="fas fa-chevron-left"></i></div>
+      <div class="hero-next"><i class="fas fa-chevron-right"></i></div>
+      <div class="swiper-pagination hero-pagination"></div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-down">
+      <span>Rolar</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre">
+  <div class="container">
+    <div class="about-grid">
+      <!-- FOTO -->
+      <div class="about-img-wrap" data-aos="fade-right">
+        <img src="assets/img/foto-dra-jayne.png" alt="Dra. Jayne Costa â€” CirurgiÃ£-Dentista" class="about-img"/>
+      </div>
+
+      <!-- TEXTO -->
+      <div class="about-content" data-aos="fade-left">
+
+        <div>
+          <h2 class="section-title">Sua beleza jÃ¡ existe.<br>Eu apenas <em style="color:var(--gold);font-style:normal">realÃ§o</em> ela.</h2>
+
+          <!-- Frase marcante -->
+          <div style="border-left:3px solid var(--gold);padding:16px 20px;background:linear-gradient(135deg,rgba(201,168,76,.07),transparent);border-radius:0 12px 12px 0;margin:20px 0">
+            <p style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--navy);line-height:1.7;font-style:italic;margin:0">
+              "Sua face e seu sorriso sÃ£o o seu cartÃ£o de visita â€” e o meu propÃ³sito Ã© realÃ§ar a beleza que jÃ¡ existe em vocÃª."
+            </p>
+            <span style="font-size:.8rem;color:var(--gold);font-weight:600;margin-top:8px;display:block">â€” Dra. Jayne Costa</span>
+          </div>
+
+          <p style="color:var(--muted);font-size:.95rem;line-height:1.8;margin-bottom:24px">
+            CirurgiÃ£-Dentista apaixonada por transformar vidas atravÃ©s da estÃ©tica e da harmonia facial. Com formaÃ§Ã£o avanÃ§ada em harmonizaÃ§Ã£o orofacial, ortodontia e implantodontia, cada atendimento Ã© pensado para realÃ§ar o que hÃ¡ de mais belo em vocÃª â€” de forma natural, segura e com resultado que vocÃª vai se orgulhar de mostrar.
+          </p>
+        </div>
+
+        <!-- EspecializaÃ§Ãµes -->
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <p style="font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px">FormaÃ§Ã£o & EspecializaÃ§Ã£o</p>
+
+          <div style="padding:14px 20px;background:var(--gray);border-radius:14px;border-left:3px solid var(--gold);transition:var(--transition)" onmouseover="this.style.background='var(--light)'" onmouseout="this.style.background='var(--gray)'">
+            <strong style="color:var(--navy);font-size:.95rem;display:block">ResidÃªncia em HarmonizaÃ§Ã£o Orofacial</strong>
+            <span style="color:var(--muted);font-size:.82rem">EspecializaÃ§Ã£o completa â€” HOF</span>
+          </div>
+
+          <div style="padding:14px 20px;background:var(--gray);border-radius:14px;border-left:3px solid var(--gold);transition:var(--transition)" onmouseover="this.style.background='var(--light)'" onmouseout="this.style.background='var(--gray)'">
+            <strong style="color:var(--navy);font-size:.95rem;display:block">PÃ³s-graduanda em Ortodontia</strong>
+            <span style="color:var(--muted);font-size:.82rem">Alinhamento e estÃ©tica do sorriso</span>
+          </div>
+
+          <div style="padding:14px 20px;background:var(--gray);border-radius:14px;border-left:3px solid var(--gold);transition:var(--transition)" onmouseover="this.style.background='var(--light)'" onmouseout="this.style.background='var(--gray)'">
+            <strong style="color:var(--navy);font-size:.95rem;display:block">Especializanda em PrÃ³tese e Implantodontia</strong>
+            <span style="color:var(--muted);font-size:.82rem">ReabilitaÃ§Ã£o oral com alta estÃ©tica</span>
+          </div>
+
+          <div style="padding:14px 20px;background:var(--gray);border-radius:14px;border-left:3px solid var(--gold);transition:var(--transition)" onmouseover="this.style.background='var(--light)'" onmouseout="this.style.background='var(--gray)'">
+            <strong style="color:var(--navy);font-size:.95rem;display:block">HarmonizaÃ§Ã£o Facial</strong>
+            <span style="color:var(--muted);font-size:.82rem">Perfiloplastia sem cortes e procedimentos estÃ©ticos</span>
+          </div>
+        </div>
+
+        <div style="margin-top:8px">
+          <a href="https://wa.me/5581999576412?text=OlÃ¡, Dra. Jayne! Vi seu site e gostaria de agendar uma avaliaÃ§Ã£o." class="btn btn-primary" target="_blank">
+            <i class="fab fa-whatsapp"></i> Agendar com a Dra. Jayne
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÃ‡OS -->
+<section id="servicos">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <h2 class="section-title">Nossos ServiÃ§os</h2>
+      <p class="section-sub" style="margin:0 auto">SoluÃ§Ãµes completas para a saÃºde e estÃ©tica do seu sorriso, com tecnologia e cuidado em cada procedimento.</p>
+    </div>
+    <div class="services-grid">
+
+      <!-- 1. Implantes -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="s-img">
+          <img src="assets/img/implate dentario.png" alt="Implantes DentÃ¡rios"/>
+          <div class="s-img-overlay"></div>
+        </div>
+        <div class="s-body">
+          <div class="s-title">Implantes DentÃ¡rios</div>
+          <div class="s-desc">Substitua dentes perdidos com implantes de titÃ¢nio de alta qualidade e estÃ©tica natural.</div>
+          <a class="s-btn" href="https://wa.me/5581999576412?text=OlÃ¡%2C%20Dra.%20Jayne!%20Vi%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20*Implantes%20DentÃ¡rios*.%20Poderia%20me%20passar%20mais%20informaÃ§Ãµes%3F" target="_blank">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- 2. Clareamento -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="s-img">
+          <img src="assets/img/clareamento dental.png" alt="Clareamento Dental"/>
+          <div class="s-img-overlay"></div>
+        </div>
+        <div class="s-body">
+          <div class="s-title">Clareamento Dental</div>
+          <div class="s-desc">Clareamento profissional com tecnologia LED que garante atÃ© 8 tons de diferenÃ§a com seguranÃ§a.</div>
+          <a class="s-btn" href="https://wa.me/5581999576412?text=OlÃ¡%2C%20Dra.%20Jayne!%20Vi%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20*Clareamento%20Dental*.%20Poderia%20me%20passar%20mais%20informaÃ§Ãµes%3F" target="_blank">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- 3. Facetas -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="s-img">
+          <img src="assets/img/facetas em porcelana.png" alt="Facetas em Porcelana"/>
+          <div class="s-img-overlay"></div>
+          <div class="s-icon"><i class="fas fa-gem"></i></div>
+        </div>
+        <div class="s-body">
+          <div class="s-title">Facetas em Porcelana</div>
+          <div class="s-desc">Facetas ultrafinas de porcelana para um sorriso perfeito, resistente e com estÃ©tica superior.</div>
+          <a class="s-btn" href="https://wa.me/5581999576412?text=OlÃ¡%2C%20Dra.%20Jayne!%20Vi%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20*Facetas%20em%20Porcelana*.%20Poderia%20me%20passar%20mais%20informaÃ§Ãµes%3F" target="_blank">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- 4. Lentes de Contato -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="240">
+        <div class="s-img">
+          <img src="assets/img/lentes de contato dental.png" alt="Lentes de Contato Dental"/>
+          <div class="s-img-overlay"></div>
+          <div class="s-icon"><i class="fas fa-eye"></i></div>
+        </div>
+        <div class="s-body">
+          <div class="s-title">Lentes de Contato Dental</div>
+          <div class="s-desc">As famosas lentes de contato dental: resultado dramÃ¡tico com mÃ­nimo desgaste do dente natural.</div>
+          <a class="s-btn" href="https://wa.me/5581999576412?text=OlÃ¡%2C%20Dra.%20Jayne!%20Vi%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20*Lentes%20de%20Contato%20Dental*.%20Poderia%20me%20passar%20mais%20informaÃ§Ãµes%3F" target="_blank">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- 5. Ortodontia -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="s-img">
+          <img src="assets/img/ortodontia.png" alt="Ortodontia"/>
+          <div class="s-img-overlay"></div>
+          <div class="s-icon"><i class="fas fa-align-center"></i></div>
+        </div>
+        <div class="s-body">
+          <div class="s-title">Ortodontia</div>
+          <div class="s-desc">Aparelho convencional, estÃ©tico e alinhadores invisÃ­veis para qualquer caso ortodÃ´ntico.</div>
+          <a class="s-btn" href="https://wa.me/5581999576412?text=OlÃ¡%2C%20Dra.%20Jayne!%20Vi%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20*Ortodontia*.%20Poderia%20me%20passar%20mais%20informaÃ§Ãµes%3F" target="_blank">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- 6. HarmonizaÃ§Ã£o Facial -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="s-img">
+          <img src="assets/img/harmonizaÃ§Ã£o facial.png" alt="HarmonizaÃ§Ã£o Facial"/>
+          <div class="s-img-overlay"></div>
+          <div class="s-icon"><i class="fas fa-magic"></i></div>
+        </div>
+        <div class="s-body">
+          <div class="s-title">HarmonizaÃ§Ã£o Facial</div>
+          <div class="s-desc">Procedimentos minimamente invasivos para harmonizar e valorizar os traÃ§os naturais do rosto.</div>
+          <a class="s-btn" href="https://wa.me/5581999576412?text=OlÃ¡%2C%20Dra.%20Jayne!%20Vi%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20*HarmonizaÃ§Ã£o%20Facial*.%20Poderia%20me%20passar%20mais%20informaÃ§Ãµes%3F" target="_blank">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- 7. Endodontia -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="s-img">
+          <img src="assets/img/endodontia.png" alt="Endodontia"/>
+          <div class="s-img-overlay"></div>
+          <div class="s-icon"><i class="fas fa-syringe"></i></div>
+        </div>
+        <div class="s-body">
+          <div class="s-title">Endodontia</div>
+          <div class="s-desc">Tratamento de canal moderno e indolor, salvando dentes comprometidos com alta precisÃ£o.</div>
+          <a class="s-btn" href="https://wa.me/5581999576412?text=OlÃ¡%2C%20Dra.%20Jayne!%20Vi%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20*Endodontia*.%20Poderia%20me%20passar%20mais%20informaÃ§Ãµes%3F" target="_blank">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- 8. PrÃ³tese -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="240">
+        <div class="s-img">
+          <img src="assets/img/prÃ³tese dentÃ¡ria.png" alt="PrÃ³tese DentÃ¡ria"/>
+          <div class="s-img-overlay"></div>
+          <div class="s-icon"><i class="fas fa-teeth"></i></div>
+        </div>
+        <div class="s-body">
+          <div class="s-title">PrÃ³tese DentÃ¡ria</div>
+          <div class="s-desc">PrÃ³teses fixas e removÃ­veis com materiais de alta durabilidade e estÃ©tica totalmente natural.</div>
+          <a class="s-btn" href="https://wa.me/5581999576412?text=OlÃ¡%2C%20Dra.%20Jayne!%20Vi%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20*PrÃ³tese%20DentÃ¡ria*.%20Poderia%20me%20passar%20mais%20informaÃ§Ãµes%3F" target="_blank">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- RESULTADOS -->
+<section id="resultados">
+  <div class="container">
+
+    <div class="section-header" data-aos="fade-up">
+      <h2 class="section-title">Resultados que<br>falam por si</h2>
+      <p class="section-sub" style="margin:0 auto">Arraste o divisor e veja a transformaÃ§Ã£o real dos nossos pacientes. Cada caso Ã© Ãºnico â€” e o seu pode ser o prÃ³ximo.</p>
+    </div>
+
+    <!-- Before/After Cards -->
+    <div class="ba-grid" style="margin-top:56px">
+      <div class="ba-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="ba-labels">
+          <span class="ba-label">Antes</span>
+          <span class="ba-label">Depois</span>
+        </div>
+        <div class="ba-compare" id="baCompare1">
+          <div class="ba-before">
+            <img src="assets/img/rinomodelaÃ§Ã£o.jpg" alt="Antes da rinomodelaÃ§Ã£o" style="object-position:center 20%;filter:none"/>
+          </div>
+          <div class="ba-after" id="baAfter1">
+            <img src="assets/img/rinomodelaÃ§Ã£o.jpg" alt="Depois da rinomodelaÃ§Ã£o" style="object-position:center 80%;filter:none"/>
+          </div>
+          <div class="ba-divider" id="baDivider1"></div>
+          <div class="ba-handle" id="baHandle1"><i class="fas fa-arrows-left-right"></i></div>
+        </div>
+        <div class="ba-info" style="background:linear-gradient(135deg,var(--navy),var(--blue));border-radius:0 0 20px 20px">
+          <strong style="color:#fff">RinomodelaÃ§Ã£o</strong>
+          <span style="color:rgba(255,255,255,.7)">Resultado real â€” @drajaynecosta</span>
+        </div>
+      </div>
+      <div class="ba-card ba-card-destaque" data-aos="fade-up" data-aos-delay="100">
+        <div class="ba-labels">
+          <span class="ba-label">Antes</span>
+          <span class="ba-label">Depois</span>
+        </div>
+        <div class="ba-compare" id="baCompare2">
+          <div class="ba-before">
+            <img src="assets/img/clareamento dental real.jpg" alt="Antes do clareamento" style="object-position:center 75%;filter:none"/>
+          </div>
+          <div class="ba-after" id="baAfter2">
+            <img src="assets/img/clareamento dental real.jpg" alt="Depois do clareamento" style="object-position:center 10%;filter:none"/>
+          </div>
+          <div class="ba-divider" id="baDivider2"></div>
+          <div class="ba-handle" id="baHandle2"><i class="fas fa-arrows-left-right"></i></div>
+        </div>
+        <div class="ba-info" style="background:linear-gradient(135deg,var(--navy),var(--blue));border-radius:0 0 20px 20px">
+          <strong style="color:#fff">Clareamento Dental</strong>
+          <span style="color:rgba(255,255,255,.7)">Resultado real â€” @drajaynecosta</span>
+        </div>
+      </div>
+      <div class="ba-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="ba-labels">
+          <span class="ba-label">Antes</span>
+          <span class="ba-label">Depois</span>
+        </div>
+        <div class="ba-compare" id="baCompare3">
+          <div class="ba-before">
+            <img src="assets/img/preenchimento labial.jpg" alt="Antes do preenchimento labial" style="object-position:center 78%;filter:none"/>
+          </div>
+          <div class="ba-after" id="baAfter3">
+            <img src="assets/img/preenchimento labial.jpg" alt="Depois do preenchimento labial" style="object-position:center 15%;filter:none"/>
+          </div>
+          <div class="ba-divider" id="baDivider3"></div>
+          <div class="ba-handle" id="baHandle3"><i class="fas fa-arrows-left-right"></i></div>
+        </div>
+        <div class="ba-info" style="background:linear-gradient(135deg,var(--navy),var(--blue));border-radius:0 0 20px 20px">
+          <strong style="color:#fff">Preenchimento Labial</strong>
+          <span style="color:rgba(255,255,255,.7)">Resultado real â€” @drajaynecosta</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dica interaÃ§Ã£o -->
+    <div class="ba-tip" data-aos="fade-up">
+      <i class="fas fa-arrows-left-right"></i>
+      <span>Arraste o divisor dourado para comparar o antes e depois</span>
+    </div>
+
+    <!-- CTA abaixo dos resultados -->
+    <div style="text-align:center;margin-top:48px" data-aos="fade-up">
+      <p style="color:var(--muted);font-size:1rem;margin-bottom:24px">Quer ver sua transformaÃ§Ã£o acontecer? A Dra. Jayne estÃ¡ pronta para te atender.</p>
+      <a href="https://wa.me/5581999576412?text=OlÃ¡, Dra. Jayne! Vi os resultados no site e quero agendar minha avaliaÃ§Ã£o." class="btn btn-primary" target="_blank">
+        <i class="fab fa-whatsapp"></i> Quero minha transformaÃ§Ã£o
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato">
+  <div class="container">
+
+    <!-- Chamada integrada -->
+    <div style="text-align:center;max-width:680px;margin:0 auto 72px" data-aos="fade-up">
+      <h2 class="section-title">Transforme seu sorriso<br>hoje mesmo</h2>
+      <p style="color:var(--muted);font-size:1rem;line-height:1.8;margin:16px 0 32px">
+        A Dra. Jayne Costa estÃ¡ pronta para te atender em JaboatÃ£o dos Guararapes â€” PE. Agende sua avaliaÃ§Ã£o e descubra como a odontologia estÃ©tica e a harmonizaÃ§Ã£o orofacial podem transformar sua autoestima.
+      </p>
+    </div>
+
+
+    <div class="contact-grid">
+      <div class="contact-info" data-aos="fade-right">
+        <div class="contact-item">
+          <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <strong>EndereÃ§o</strong>
+            <span>Av. Gen. Manoel Rabelo, 63 â€” Engenho Velho<br>JaboatÃ£o dos Guararapes â€” PE, 54280-005<br><a href="https://www.instagram.com/drajaynecosta/" target="_blank" style="color:var(--sky);text-decoration:none;font-weight:600">@drajaynecosta</a></span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <strong>Telefone / WhatsApp</strong>
+            <span>(81) 99957-6412</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <strong>Redes Sociais</strong>
+            <span>@drajaynecosta no Instagram<br>wa.me/+5581999576412</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><i class="fas fa-clock"></i></div>
+          <div>
+            <strong>HorÃ¡rio de Funcionamento</strong>
+            <span>Segunda a Sexta: 8h Ã s 17h<br>SÃ¡bado: 8h Ã s 12h &nbsp;|&nbsp; Domingo: Fechado</span>
+          </div>
+        </div>
+        <div class="contact-map" style="height:220px;padding:0;background:none;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.0!2d-34.9230!3d-8.1750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.%20Gen.%20Manoel%20Rabelo%2C%2063%20-%20Engenho%20Velho%2C%20Jaboat%C3%A3o%20dos%20Guararapes%20-%20PE%2C%2054280-005!5e0!3m2!1spt-BR!2sbr!4v1"
+            width="100%" height="100%" style="border:0;border-radius:16px;display:block;"
+            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="LocalizaÃ§Ã£o Dra. Jayne Costa">
+          </iframe>
+        </div>
+      </div>
+      <div data-aos="fade-left">
+        <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label>Nome completo *</label>
+            <input type="text" placeholder="Seu nome" required/>
+          </div>
+          <div class="form-group">
+            <label>ServiÃ§o desejado</label>
+            <select>
+              <option value="">Selecione um serviÃ§o...</option>
+              <option>Implantes DentÃ¡rios</option>
+              <option>Clareamento Dental</option>
+              <option>Facetas em Porcelana</option>
+              <option>Lentes de Contato Dental</option>
+              <option>Ortodontia</option>
+              <option>HarmonizaÃ§Ã£o Facial</option>
+              <option>Endodontia</option>
+              <option>PrÃ³tese DentÃ¡ria</option>
+              <option>Outro / Consulta Geral</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Mensagem</label>
+            <textarea placeholder="Conte um pouco sobre o que vocÃª precisa..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
+            <i class="fas fa-paper-plane"></i> Enviar Mensagem
+          </button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <i class="fas fa-check-circle"></i>
+          <strong style="display:block;font-size:1.1rem;color:var(--navy);margin-bottom:8px">Mensagem enviada!</strong>
+          <span style="color:var(--muted)">Nossa equipe entrarÃ¡ em contato em atÃ© 2 horas. Obrigado!</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="logo">
+          <img src="MazyOS/identidade/logo.jpg" alt="Dra. Jayne Costa" class="logo-icon" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="logo-text" style="display:none">Dra. <span>Jayne Costa</span><small>Odontologia e HarmonizaÃ§Ã£o</small></div>
+        </a>
+        <p>A Dra. Jayne Costa Ã© especialista em odontologia estÃ©tica e harmonizaÃ§Ã£o orofacial. Tecnologia avanÃ§ada, atendimento humanizado e resultados que transformam sorrisos.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/drajaynecosta/" target="_blank" title="Instagram @drajaynecosta"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/5581999576412" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Links RÃ¡pidos</h4>
+        <ul>
+          <li><a href="#inicio">InÃ­cio</a></li>
+          <li><a href="#sobre">Sobre a ClÃ­nica</a></li>
+          <li><a href="#servicos">ServiÃ§os</a></li>
+          <li><a href="#resultados">Resultados</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Especialidades</h4>
+        <ul>
+          <li><a href="#servicos">Implantes</a></li>
+          <li><a href="#servicos">Lentes de Contato</a></li>
+          <li><a href="#servicos">Facetas</a></li>
+          <li><a href="#servicos">Clareamento</a></li>
+          <li><a href="#servicos">Ortodontia</a></li>
+          <li><a href="#servicos">HarmonizaÃ§Ã£o</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>HorÃ¡rios</h4>
+        <div class="footer-schedule">
+          <div class="schedule-row"><span class="day">Segunda â€” Sexta</span><span class="time">8h â€“ 17h</span></div>
+          <div class="schedule-row"><span class="day">SÃ¡bado</span><span class="time">8h â€“ 12h</span></div>
+          <div class="schedule-row"><span class="day">Domingo</span><span class="time">Fechado</span></div>
+        </div>
+        <a href="https://wa.me/5581999576412" class="btn btn-primary" style="margin-top:24px;font-size:.85rem;padding:12px 20px">
+          <i class="fab fa-whatsapp"></i> Agendar Agora
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Â© 2025 Dra. Jayne Costa â€” Odontologia e HarmonizaÃ§Ã£o Orofacial. Todos os direitos reservados.</p>
+      <p>Desenvolvido por <a href="#">David â€” IA Marketing Digital</a> &nbsp;|&nbsp; CRO-PE: 20371</p>
+    </div>
+  </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<div id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fas fa-arrow-up"></i>
+</div>
+
+<!-- WHATSAPP FLOAT -->
+<a id="wa-float" href="https://wa.me/5581999576412?text=OlÃ¡! Gostaria de agendar uma avaliaÃ§Ã£o." target="_blank" title="Falar no WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+/* â”€â”€â”€ LOADER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('loader').classList.add('hidden');
+  }, 1600);
+});
+
+/* â”€â”€â”€ AOS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+AOS.init({ duration: 700, easing: 'ease-out-cubic', once: true, offset: 60 });
+
+/* â”€â”€â”€ HERO SWIPER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+const heroSwiper = new Swiper('#heroSwiper', {
+  loop: true,
+  speed: 900,
+  autoplay: { delay: 5500, disableOnInteraction: false },
+  effect: 'fade',
+  fadeEffect: { crossFade: true },
+  navigation: { nextEl: '.hero-next', prevEl: '.hero-prev' },
+  pagination: { el: '.hero-pagination', clickable: true },
+});
+
+/* â”€â”€â”€ TESTIMONIALS SWIPER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+new Swiper('#testSwiper', {
+  loop: true,
+  speed: 700,
+  autoplay: { delay: 4000, disableOnInteraction: false },
+  slidesPerView: 1,
+  spaceBetween: 24,
+  pagination: { el: '.test-pagination', clickable: true },
+  breakpoints: {
+    640: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 },
+  },
+});
+
+/* â”€â”€â”€ HEADER SCROLL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+const header = document.getElementById('header');
+const backTop = document.getElementById('back-top');
+let lastY = 0;
+window.addEventListener('scroll', () => {
+  const y = window.scrollY;
+  header.classList.toggle('scrolled', y > 60);
+  backTop.classList.toggle('visible', y > 400);
+
+  if (window.innerWidth <= 768) {
+    if (y > lastY && y > 100) {
+      header.classList.add('hidden-nav');
+    } else {
+      header.classList.remove('hidden-nav');
+    }
+  }
+  lastY = y;
+});
+
+/* â”€â”€â”€ MOBILE MENU â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+function toggleMobile() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+function closeMobile() {
+  document.getElementById('mobileMenu').classList.remove('open');
+}
+
+/* â”€â”€â”€ COUNTER ANIMATION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+function animateCounters() {
+  document.querySelectorAll('.counter').forEach(el => {
+    const target = parseInt(el.dataset.target);
+    const dur = 1800;
+    const step = target / (dur / 16);
+    let current = 0;
+    const timer = setInterval(() => {
+      current = Math.min(current + step, target);
+      el.textContent = Math.floor(current).toLocaleString('pt-BR');
+      if (current >= target) clearInterval(timer);
+    }, 16);
+  });
+}
+const aboutObs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { animateCounters(); aboutObs.disconnect(); } });
+}, { threshold: 0.3 });
+const aboutSection = document.getElementById('sobre');
+if (aboutSection) aboutObs.observe(aboutSection);
+
+/* â”€â”€â”€ BEFORE/AFTER SLIDER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+function initBASlider(compareId, afterId, dividerId, handleId) {
+  const compare = document.getElementById(compareId);
+  const after   = document.getElementById(afterId);
+  const divider = document.getElementById(dividerId);
+  const handle  = document.getElementById(handleId);
+  if (!compare) return;
+
+  let dragging = false;
+  function setPosition(pct) {
+    pct = Math.max(5, Math.min(95, pct));
+    after.style.clipPath  = `inset(0 ${100-pct}% 0 0)`;
+    divider.style.left    = pct + '%';
+    handle.style.left     = pct + '%';
+  }
+  setPosition(50);
+
+  function getX(e) {
+    const touch = e.touches?.[0];
+    return (touch || e).clientX;
+  }
+  compare.addEventListener('mousedown',  e => { dragging = true; });
+  compare.addEventListener('touchstart', e => { dragging = true; }, { passive: true });
+  window.addEventListener('mousemove', e => {
+    if (!dragging) return;
+    const rect = compare.getBoundingClientRect();
+    setPosition(((getX(e) - rect.left) / rect.width) * 100);
+  });
+  window.addEventListener('touchmove', e => {
+    if (!dragging) return;
+    const rect = compare.getBoundingClientRect();
+    setPosition(((getX(e) - rect.left) / rect.width) * 100);
+  }, { passive: true });
+  window.addEventListener('mouseup',  () => { dragging = false; });
+  window.addEventListener('touchend', () => { dragging = false; });
+}
+initBASlider('baCompare1','baAfter1','baDivider1','baHandle1');
+initBASlider('baCompare2','baAfter2','baDivider2','baHandle2');
+initBASlider('baCompare3','baAfter3','baDivider3','baHandle3');
+
+/* â”€â”€â”€ PHONE MASK â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+const telefoneInput = document.getElementById('telefone');
+if (telefoneInput) {
+  telefoneInput.addEventListener('input', function() {
+    let v = this.value.replace(/\D/g,'');
+    if (v.length <= 10) v = v.replace(/^(\d{2})(\d{4})(\d{0,4}).*/,'($1) $2-$3');
+    else v = v.replace(/^(\d{2})(\d{5})(\d{0,4}).*/,'($1) $2-$3');
+    this.value = v;
+  });
+}
+
+/* â”€â”€â”€ FORM SUBMIT â†’ WHATSAPP â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+function handleSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+  const nome    = form.querySelector('input[type="text"]').value.trim();
+  const tel     = form.querySelector('input[type="tel"]').value.trim();
+  const servico = form.querySelector('select').value || 'NÃ£o informado';
+  const msg     = form.querySelector('textarea').value.trim();
+
+  const texto = `OlÃ¡, Dra. Jayne! ðŸ‘‹\n\n` +
+    `*Nome:* ${nome}\n` +
+    `*Telefone:* ${tel}\n` +
+    `*ServiÃ§o desejado:* ${servico}\n` +
+    (msg ? `*Mensagem:* ${msg}` : '');
+
+  const url = `https://wa.me/5581999576412?text=${encodeURIComponent(texto)}`;
+  window.open(url, '_blank');
+}
+
+/* â”€â”€â”€ SMOOTH SCROLL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (!target) return;
+    e.preventDefault();
+    const offset = 80;
+    window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+  });
+});
+</script>
+</body>
+</html>
