@@ -152,11 +152,17 @@
     }
     .hero-bg {
       position:absolute; inset:0;
-      background-size:cover; background-position:center;
+      overflow:hidden;
+    }
+    .hero-bg picture { display:block; width:100%; height:100%; }
+    .hero-bg img {
+      width:100%; height:100%;
+      object-fit:cover; object-position:center;
       transform:scale(1.05);
       transition:transform 8s ease;
+      display:block;
     }
-    .swiper-slide-active .hero-bg { transform:scale(1); }
+    .swiper-slide-active .hero-bg img { transform:scale(1); }
     .hero-overlay {
       position:absolute; inset:0;
       background:linear-gradient(135deg,rgba(18,8,42,.88) 0%,rgba(74,40,128,.55) 100%);
@@ -571,7 +577,12 @@
 
         <!-- Slide 1 -->
         <div class="swiper-slide hero-slide">
-          <div class="hero-bg" style="background-image:url('assets/img/slide carrosel 2.png');background-position:center center"></div>
+          <div class="hero-bg">
+            <picture>
+              <source media="(max-width:767px)" srcset="assets/img/dra-jayne-hero-mobile-1080x1920.jpg">
+              <img src="assets/img/dra-jayne-hero-desktop-1920x950.jpg" alt="Dra. Jayne Costa" loading="eager">
+            </picture>
+          </div>
           <div class="hero-overlay"></div>
           <div class="hero-content">
             <div class="hero-badge"><i class="fas fa-star"></i> Tecnologia de Ponta</div>
@@ -586,7 +597,12 @@
 
         <!-- Slide 2 -->
         <div class="swiper-slide hero-slide">
-          <div class="hero-bg" style="background-image:url('assets/img/slide carrosel 1.png');background-position:center top"></div>
+          <div class="hero-bg">
+            <picture>
+              <source media="(max-width:767px)" srcset="assets/img/dra-jayne-exame-mobile-1080x1920.jpg">
+              <img src="assets/img/dra-jayne-exame-desktop-1920x950.jpg" alt="Lentes de Contato Dental" loading="lazy">
+            </picture>
+          </div>
           <div class="hero-overlay"></div>
           <div class="hero-content">
             <div class="hero-badge"><i class="fas fa-gem"></i> EstÃ©tica Premium</div>
@@ -601,7 +617,12 @@
 
         <!-- Slide 3 -->
         <div class="swiper-slide hero-slide">
-          <div class="hero-bg" style="background-image:url('assets/img/foto slide sorriso.png');background-position:center center"></div>
+          <div class="hero-bg">
+            <picture>
+              <source media="(max-width:767px)" srcset="assets/img/sorriso-mobile-1080x1920.jpg">
+              <img src="assets/img/sorriso-desktop-1920x950.jpg" alt="Sorriso com Confiança" loading="lazy">
+            </picture>
+          </div>
           <div class="hero-overlay"></div>
           <div class="hero-content">
             <div class="hero-badge"><i class="fas fa-sparkles"></i> Clareamento AvanÃ§ado</div>
@@ -616,7 +637,12 @@
 
         <!-- Slide 4 -->
         <div class="swiper-slide hero-slide">
-          <div class="hero-bg" style="background-image:url('assets/img/alinhamento invisive.png');background-position:center center"></div>
+          <div class="hero-bg">
+            <picture>
+              <source media="(max-width:767px)" srcset="assets/img/alinhador-mobile-1080x1920.jpg">
+              <img src="assets/img/alinhador-desktop-1920x950.jpg" alt="Alinhamento Invisível" loading="lazy">
+            </picture>
+          </div>
           <div class="hero-overlay"></div>
           <div class="hero-content">
             <div class="hero-badge"><i class="fas fa-award"></i> Ortodontia Moderna</div>
